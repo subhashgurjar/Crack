@@ -1,0 +1,16 @@
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Crack.Model
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+
+        public DbSet<Post> Posts { get; set; }
+
+
+    }
+}
